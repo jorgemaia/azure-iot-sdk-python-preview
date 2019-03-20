@@ -76,7 +76,7 @@ class AbstractClient(object):
         pass
 
     @abc.abstractmethod
-    def send_method_response(self, method, payload, status):
+    def send_method_response(self, method_request, payload, status):
         pass
 
 
