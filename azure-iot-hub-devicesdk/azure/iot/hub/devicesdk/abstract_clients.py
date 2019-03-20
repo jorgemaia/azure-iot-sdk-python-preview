@@ -28,7 +28,7 @@ class AbstractClient(object):
 
     @classmethod
     def from_authentication_provider(cls, authentication_provider, transport_name):
-        """Creates a device client with the specified authentication provider and transport.
+        """Creates a client with the specified authentication provider and transport.
 
         When creating the client, you need to pass in an authorization provider and a transport_name.
 
