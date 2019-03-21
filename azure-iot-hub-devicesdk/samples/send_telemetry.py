@@ -32,10 +32,10 @@ for i in range(1, 6):
     time.sleep(1)
 
 # send only string messages
-# for i in range(6, 11):
-#     print("sending message #" + str(i))
-#     device_client.send_event("test payload message " + str(i))
-#     time.sleep(1)
+for i in range(6, 11):
+    print("sending message #" + str(i))
+    device_client.send_event("test payload message " + str(i))
+    time.sleep(1)
 
 
 # finally, disconnect
