@@ -3,15 +3,15 @@
 # Licensed under the MIT License. See License.txt in the project root for
 # license information.
 # --------------------------------------------------------------------------
-"""This module contains a provider that is responsible for providing shared access tokens that will eventually establish
+"""This module contains a client that is responsible for providing shared access tokens that will eventually establish
  the authenticity of devices to Device Provisioning Service.
 """
 from azure.iot.common.sastoken import SasToken
 
 
-class SymmetricKeySecurityProvider(object):
+class SymmetricKeySecurityClient(object):
     """
-    A provider that is responsible for providing shared access tokens that will eventually establish
+    A client that is responsible for providing shared access tokens that will eventually establish
     the authenticity of devices to Device Provisioning Service.
     """
 

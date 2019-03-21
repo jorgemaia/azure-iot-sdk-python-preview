@@ -16,9 +16,6 @@ import six
 class RegistrationClient(object):
     """
     Super class for any client that can be used to register devices to Device Provisioning Service.
-    :ivar str provisioning_host: Host running the Device Provisioning Service.
-    :ivar str security_client: Instance of Security client
-    :ivar str module_id: Instance of transport.
     """
 
     def __init__(self, transport):
@@ -26,7 +23,7 @@ class RegistrationClient(object):
         Initializes the registration client.
         :param transport: Instance of the Transport object.
         """
-        self.transport = transport
+        self._transport = transport
 
     @abc.abstractmethod
     def register(self):

@@ -7,7 +7,7 @@
 This module contains constants related to the transport package.
 """
 
-USER_AGENT = "azure-iot-provisioning-device" + "/" + "1.5.3"
+USER_AGENT = "azure-iot-provisioning-devicessdk" + "/" + "0.0.1"
 """
 Default interval for polling, to use in case service doesn't provide it to us.
 """

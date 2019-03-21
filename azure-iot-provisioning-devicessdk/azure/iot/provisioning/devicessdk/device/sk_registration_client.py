@@ -22,10 +22,13 @@ class SymmetricKeyRegistrationClient(RegistrationClient):
         Initializer for the Symmetric Key Registration Client
         """
         RegistrationClient.__init__(self, transport)
-        self.transport.on_registration_complete = self.on_device_registration_complete
+        self._transport.on_registration_complete = self.on_device_registration_complete
 
     def register(self):
-        self.transport.send_registration_request()
+        """
+        Register the device with the provisioning service.
+        """
+        self._transport.send_registration_request()
 
     def cancel(self):
         pass
