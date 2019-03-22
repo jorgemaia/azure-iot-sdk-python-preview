@@ -77,7 +77,7 @@ class InboxManager(object):
         return inbox
 
     def clear_all_method_requests(self):
-        """Delete all method requests currently in inboxes. Also delete named inboxes.
+        """Delete all method requests currently in inboxes.
         """
         self.generic_method_request_inbox.clear()
         for inbox in self.named_method_request_inboxes.values():
